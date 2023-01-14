@@ -3,7 +3,7 @@
 }
 /* ------------------------------------- */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   /* Main */
   .main__content {
     max-width: 668px;

@@ -10,12 +10,24 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;700&family=Roboto&display=swap"
     rel="stylesheet">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   
   <title>Plunts</title>
 </head>
@@ -107,32 +119,32 @@
         </div>
         <div class="projects__gallery">
           <div class="projects__gallery-item">
-            <img src="./img/foto/pic1.png" alt="foto">
+            <img src="./img/foto/pic1.jpg" alt="foto">
             <h3 class="projects__gallery-title">Garden care</h3>
             <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
           </div>
           <div class="projects__gallery-item">
-            <img src="./img/foto/pic2.png" alt="foto">
+            <img src="./img/foto/pic2.jpg" alt="foto">
             <h3 class="projects__gallery-title">Planting</h3>
             <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
           </div>
           <div class="projects__gallery-item">
-            <img src="./img/foto/pic3.png" alt="foto">
+            <img src="./img/foto/pic3.jpg" alt="foto">
             <h3 class="projects__gallery-title">Lawn care</h3>
             <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
           </div>
           <div class="projects__gallery-item">
-            <img src="./img/foto/pic4.png" alt="foto">
+            <img src="./img/foto/pic4.jpg" alt="foto">
             <h3 class="projects__gallery-title">Planting</h3>
             <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
           </div>
           <div class="projects__gallery-item">
-            <img src="./img/foto/pic5.png" alt="foto">
+            <img src="./img/foto/pic5.jpg" alt="foto">
             <h3 class="projects__gallery-title">Garden care</h3>
             <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
           </div>
           <div class="projects__gallery-item">
-            <img src="./img/foto/pic6.png" alt="foto">
+            <img src="./img/foto/pic6.jpg" alt="foto">
             <h3 class="projects__gallery-title">Planting</h3>
             <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
           </div>
@@ -144,26 +156,53 @@
     <section class="prices">
       <div class="prices__content container">
         <div class="prices__left">
-          <div class="prices__title">Prices</div>
+          <div class="prices__title">
+            Prices
+          </div>
+          <!-- Choice -->
           <div class="prices__choice">
-            <button class="prices__button" type="menu">
-              <p class="prices__button-title">Basics</p>
-              <p class="prices__button-arrow">
-                <img src="./img/arrow.svg" alt="arrow">
-              </p>
-            </button>
-            <button class="prices__button" type="menu">
-              <p class="prices__button-title">Standart</p>
-              <p class="prices__button-arrow">
-                <img src="./img/arrow.svg" alt="arrow">
-              </p>
-            </button>
-            <button class="prices__button" type="menu">
-              <p class="prices__button-title">Pro care</p>
-              <p class="prices__button-arrow">
-                <img src="./img/arrow.svg" alt="arrow">
-              </p>
-            </button>
+            <!-- Basic -->
+            <div class="accordion">
+              <div class="prices__choice-accordion">
+                <p class="prices__choice-title">Basics</p>
+                <p class="prices__choice-arrow"></p>
+              </div>
+              <article class="accordion__content">
+                <p class="prices__choice-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <p class="prices__choice-time"><span class="prices__choice-sum">$15</span> / per hour</p>
+                <button type="submit" class="prices__choice-btn">
+                  <a href="#!">Order</a>
+                </button>
+              </article>
+            </div>
+            <!-- Standart -->
+            <div class="accordion">
+              <div class="prices__choice-accordion">
+                <p class="prices__choice-title">Standart</p>
+                <p class="prices__choice-arrow"></p>
+              </div>
+              <article class="accordion__content">
+                <p class="prices__choice-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <p class="prices__choice-time"><span class="prices__choice-sum">$25</span> / per hour</p>
+                <button type="submit" class="prices__choice-btn">
+                  <a href="#!">Order</a>
+                </button>
+              </article>
+            </div>
+            <!-- Pro care -->
+            <div class="accordion">
+              <div class="prices__choice-accordion">
+                <p class="prices__choice-title">Pro care</p>
+                <p class="prices__choice-arrow"></p>
+              </div>
+              <article class="accordion__content">
+                <p class="prices__choice-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <p class="prices__choice-time"><span class="prices__choice-sum">$35</span> / per hour</p>
+                <button type="submit" class="prices__choice-btn">
+                  <a href="#!">Order</a>
+                </button>
+              </article>
+            </div>
           </div>
         </div>
         <div class="prices__right">
@@ -201,34 +240,37 @@
     <!-- !Footer -->
     <footer class="footer">
       <div class="footer__content container">
+        <!-- Right -->
         <div class="footer__left">
           <p>©</p>
           <p>2022</p>
-          <p"><a href="footer__github" class="">github</a></p>
+          <p><a href="https://github.com" target="_blank" class="footer__githab">github</a></p>
         </div>
+        <!-- School -->
         <div class="footer__name">
           <p class="footer__title">Rolling Scopes School</p>
         </div>
+        <!-- Social -->
         <div class="footer__social">
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="" class="footer__link">
-                <img src="./img/social/inst 1.png" alt="logo">
+              <a href="https://instagram.com" target="_blank" class="footer__link">
+                <img src="./img/social/inst.svg" alt="instagram">
               </a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">
-                <img src="./img/social/fb 1.png" alt="logo">
+              <a href="https://facebook.com" target="_blank" class="footer__link">
+                <img src="./img/social/fb.svg" class="footer__img" alt="facebook">
               </a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">
-                <img src="./img/social/tw 1.png" alt="logo">
+              <a href="https://twitter.com" target="_blank" class="footer__link">
+                <img src="./img/social/tw.svg" alt="twitter">
               </a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">
-                <img src="./img/social/pinterest 1.png" alt="logo">
+              <a href="https://pinterest.com" target="_blank" class="footer__link">
+                <img src="./img/social/pin.svg" alt="pinterest">
               </a>
             </li>
           </ul>
@@ -248,6 +290,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
 
   <script src="./js/upButton.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 </html>

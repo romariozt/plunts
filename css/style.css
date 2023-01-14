@@ -38,6 +38,7 @@ button {
 .container {
   max-width: 1222px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .flex {
   display: flex;
@@ -99,13 +100,15 @@ button {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
-  border: 3px solid #000;
+  border: 3px solid #E06733;
   border-radius: 10px;
   margin-bottom: 94px;
 }
 .button:hover {
-  border: 3px solid #E06733;
+  background-color: #E06733;
   transition: border 0.5s ease 0s;
+  color: #fff;
+  transition: 0.3s;
 }
 
 /* ------------------------------------- */
@@ -165,8 +168,10 @@ button {
   margin-right: 38px;
 }
 .button-project:hover {
-  border: 1px solid #499A18;
-  color: #499A18;
+  background-color: #E06733;
+  transition: border 0.5s ease 0s;
+  color: #fff;
+  transition: 0.3s;
 }
 .projects__gallery {
   display: grid;
@@ -179,6 +184,7 @@ button {
 .projects__gallery-item {
   border: 1px solid #E3E1D5;
   border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
 }
 .projects__gallery-item:hover {
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -206,7 +212,8 @@ button {
 .prices__content {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0 115px;
+  margin-top: 40px;
+  margin-bottom: 115px;
 }
 .prices__title {
   max-width: 452px;
@@ -224,7 +231,14 @@ button {
   border-radius: 20px;
   gap: 32px;
 }
-.prices__button {
+/* Accordion */
+.accordion {
+  max-width: 750px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.prices__choice-accordion {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -233,49 +247,100 @@ button {
   background: #EDF2EC;
   border-radius: 20px;
 }
-.prices__button-title {
+.prices__choice-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   color: #000;
 }
-.prices__button-arrow {
+.prices__choice-arrow {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #D9D9D9;
+  background: #D9D9D9 url('../img/arrow.svg') no-repeat center;
+  cursor: pointer;
+}
+.prices__choice-arrow-rotate {
+  transform: rotate(180deg);
+  transition: 300;
+}
+.accordion__content {
+  display: none;
+  padding: 0 40px 0 40px;
+}
+.prices__choice-text {
+  width: 164px;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 1;
+  color: #717171;
+  padding-bottom: 6px;
+  border-top: 0.5px solid #AEA1A1;
+  padding-top: 6px;
+}
+.prices__choice-time {
+  font-size: 12px;
+  line-height: 20px;
+  padding-bottom: 12px;
+  color: #000;
+}
+.prices__choice-sum {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #E06733;
+  padding-bottom: 12px;
+}
+.prices__choice-btn {
+  box-sizing: border-box;
+  width: 86px;
+  height: 25px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #717171;
+  padding: 3px 20px;
+  margin-bottom: 12px;
+}
+.change__color, .change__color-accordion {
+  background-color: #D6E7D2;
+  transition: 300;
 }
 .prices__right {
-  max-width: 510px;
+  display: flex;
+  flex-direction: column;
   text-align: right;
 }
-.prices__item{
-  margin-bottom: 39px;
+.prices__item {
 }
 .prices__title-right {
+  width: 452px;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 40px;
   line-height: 50px;
   color: #000;
   padding-bottom: 38px;
 }
-.prices__item .button-project {
-  margin-right: 0;
+.main__title-span {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #499A18;
 }
 .prices__image {
-  bottom: 0;
-  right: 0;
+  padding-top: 38px;
 }
-
 /* ------------------------------------- */
 /* !Contact */
 /* ------------------------------------- */
 .contacts {
   background: #EDF2EC;
+  padding-top: 53px;
 }
 .contacts__content {
   display: flex;
-  padding-top: 53px;
 }
 .contacts__image {
   width: 400px;
@@ -323,11 +388,14 @@ button {
 .footer__content {
   display: flex;
   justify-content: space-between;
-  padding: 40px 109px;
+  padding: 40px 0;
 }
 .footer__left {
   display: flex;
   gap: 20px;
+}
+.footer__left a:hover {
+  color: blue;
 }
 .footer__left,
 .footer__title{
@@ -339,8 +407,21 @@ button {
 .footer__list {
   display: flex;
   gap: 20px;
-}
+  align-items: center;
 
+}
+.footer__item {
+  display: inline-block;
+  padding: 9px 0;
+}
+.footer__link {
+}
+.footer__img {
+
+}
+.footer__img:hover {
+
+}
 /* ------------------------------------ */
 
 /* ?Кнопка Вверх  */
