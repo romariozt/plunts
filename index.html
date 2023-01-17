@@ -1,3 +1,4 @@
+<!-- mariozt -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,30 +38,44 @@
     <!-- !Header -->
     <section class="header">
       <div class="header__content container flex">
+        <!-- Logo -->
         <div class="header__logo">
           <a href="#" class="">
             <img src="./img/logo.png" alt="logo">
           </a>
         </div>
+        <!-- Menu Header -->
         <nav class="header__menu">
           <ul class="header__list flex">
             <li class="header__item">
               <a href="#" class="header__link">Home</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">About us</a>
+              <a id="main-link" class="header__link" href="">About us</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Service</a>
+              <a id="service-link" class="header__link" href="">Service</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Price</a>
+              <a id="price-link" class="header__link" href="">Price</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Contacts</a>
+              <a id="contact-link" class="header__link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
+        <!-- Burger-Menu -->
+        <label>
+          <input type="checkbox">
+          <span class="menu"> <span class="hamburger"></span> </span>
+          <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#!">About us</a> </li>
+            <li> <a href="#!">Services</a> </li>
+            <li> <a href="#!">Prices</a> </li>
+            <li> <a href="#!">Contacts</a> </li>
+          </ul>
+        </label>
       </div>
     </section>
 
@@ -85,7 +100,7 @@
     </main>
 
     <!-- !Gardeners -->
-    <section class="gardeners">
+    <section id="about-us" class="gardeners">
       <div class="gardeners__content container flex">
         <div class="gardeners__left">
           <div class="gardeners__item">
@@ -99,13 +114,13 @@
           </div>
         </div>
         <div class="gardeners__image">
-          <img src="./img/plants/houseplant 1.png" alt="leafs">
+          <img class="gardeners__image-vazon" src="./img/plants/houseplant 1.png" alt="leafs">
         </div>
       </div>
     </section>
 
     <!-- !Projects -->
-    <section class="projects">
+    <section id="service" class="projects">
       <div class="projects__content container">
         <div class="projects__header">
           <div class="projects__item">
@@ -153,7 +168,7 @@
     </section>
 
     <!-- !Prices -->
-    <section class="prices">
+    <section id="price" class="prices">
       <div class="prices__content container">
         <div class="prices__left">
           <div class="prices__title">
@@ -218,21 +233,37 @@
     </section>
 
     <!-- !Contact -->
-    <section class="contacts">
+    <section id="contacts" class="contacts">
       <div class="contacts__content container">
-        <div class="contacts__image">
-          <img src="./img/contact_woman 1.png" alt="image">
-        </div>
+        <!-- Title -->
         <div class="contacts__title">
           <h2 class="contacts__name">Contact us</h2>
         </div>
-        <!-- jQuery -->
+        <!-- Box -->
         <div class="contacts__box">
-          <div class="contacts__item">
-            <p class="contacts__text">City</p>
-            <p class="contacts__icon">></p>
+          <!-- Image woman -->
+          <div class="contacts__image">
+            <img class="contacts__image-woman" src="./img/contact_woman 1.png" alt="image">
           </div>
-          <p class="contacts__hidden">Canandaigua, NY</p>
+          <!-- jQuery -->
+          <!-- Contact us menu city -->
+          <div class="contact__choice">
+            <!-- City -->
+            <div class="accordion__contact">
+              <div class="contact__choice-accordion">
+                <p class="contact__choice-title">City</p>
+                <p class="contact__choice-arrow"></p>
+              </div>
+              <article class="contacts__accordion">
+                <form action="">
+                  <input class="contacts__input" required placeholder="Canandaigua, NY"></input>
+                </form>
+                <a id="open__modal-1" href="#!" class="contacts__city">New York City</a>
+                <a id="open__modal-2" href="#!" class="contacts__city">Yonkers, NY</a>
+                <a id="open__modal-3" href="#!" class="contacts__city">Sherrill, NY</a>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -279,11 +310,105 @@
     </footer>
   </div>
 
-  <!-- ?Кнопка Вверх -->
+  <!-- ?Кнопка Вверх
   <div id="up" class="btn__up">
     <span>&#10148;</span>
+  </div> -->
+
+
+  <!-- ?Modal window city -->
+  <div class="modal__overlay-city-1">
+    <div class="modal__form-container">
+      <div class="contact__choice-id">
+        <div class="contact__choice-text">
+          <p>City:</p>
+          <p>Phone:</p>
+          <p>Office adress:</p>
+        </div>
+        <div class="contact__choice-text">
+          <p>Canandaigua, NY</p>
+          <p>+1 585 393 0001</p>
+          <p>151 Charlotte Street</p>
+        </div>
+      </div>
+      <div class="contact__choice-btn">
+        <button type="submit" class="contact__choice-button">Call us</button>
+      </div>
+      <div class="close">
+        <p>x</p>
+      </div>
+    </div>
   </div>
 
+  <div class="modal__overlay-city-2">
+    <div class="modal__form-container">
+      <div class="contact__choice-id">
+        <div class="contact__choice-text">
+          <p>City:</p>
+          <p>Phone:</p>
+          <p>Office adress:</p>
+        </div>
+        <div class="contact__choice-text">
+          <p>New York City</p>
+          <p>+1	212	456 0002</p>
+          <p>9 East 91st Street</p>
+        </div>
+      </div>
+      <div class="contact__choice-btn">
+        <button type="submit" class="contact__choice-button">Call us</button>
+      </div>
+      <div class="close">
+        <p>x</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__overlay-city-3">
+    <div class="modal__form-container">
+      <div class="contact__choice-id">
+        <div class="contact__choice-text">
+          <p>City:</p>
+          <p>Phone:</p>
+          <p>Office adress:</p>
+        </div>
+        <div class="contact__choice-text">
+          <p>Yonkers, NYY</p>
+          <p>+1	914	678 0003</p>
+          <p>511 Warburton Ave</p>
+        </div>
+      </div>
+      <div class="contact__choice-btn">
+        <button type="submit" class="contact__choice-button">Call us</button>
+      </div>
+      <div class="close">
+        <p>x</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__overlay-city-4">
+    <div class="modal__form-container">
+      <div class="contact__choice-id">
+        <div class="contact__choice-text">
+          <p>City:</p>
+          <p>Phone:</p>
+          <p>Office adress:</p>
+        </div>
+        <div class="contact__choice-text">
+          <p>Sherrill, NY</p>
+          <p>+1	315	908 0004</p>
+          <p>14 WEST Noyes BLVDt</p>
+        </div>
+      </div>
+      <div class="contact__choice-btn">
+        <button type="submit" class="contact__choice-button">Call us</button>
+      </div>
+      <div class="close">
+        <p>x</p>
+      </div>
+    </div>
+  </div>
+ 
   
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -291,6 +416,7 @@
 
   <script src="./js/upButton.js"></script>
   <script src="./js/script.js"></script>
+  <script src="./js/modal.js"></script>
 
 </body>
 </html>

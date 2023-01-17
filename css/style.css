@@ -51,7 +51,7 @@ button {
 /* ------------------------------------- */
 .header {
   background: #EDF2EC;
-  padding: 42px 110px;
+  padding: 42px 0;
 }
 .header__list {
   gap: 46px;
@@ -67,6 +67,7 @@ button {
   color: #E06733;
   font-weight: 700;
 }
+
 
 /* ------------------------------------- */
 /* !Main */
@@ -337,16 +338,18 @@ button {
 /* ------------------------------------- */
 .contacts {
   background: #EDF2EC;
-  padding-top: 53px;
+  padding-top: 60px;
 }
 .contacts__content {
+ 
+}
+.contacts__box {
   display: flex;
+  justify-content: space-between;
 }
-.contacts__image {
-  width: 400px;
-}
+
 .contacts__title {
-  padding: 8px 64px 0 113px;
+  text-align: center;
 }
 .contacts__name {
   font-family: 'Inika';
@@ -355,32 +358,148 @@ button {
   line-height: 52px;
   color: #499A18;
 }
-.contacts__box {
-  margin: 0 auto;
+/* jQuery */
+.contact__choice {
   padding-top: 96px;
 }
-.contacts__item {
-  display: flex;
-  align-items: center;
-  gap: 175px;
-  width: 400px;
+.accordion__contact {
   background: #D6E7D2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px;
+  width: 400px;
+  height: 50px;
 }
-.contacts__text {
+.contact__choice-accordion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  padding: 5px 35px 5px 20px;
+}
+.contact__choice-title {
+  width: 204px;
+  height: 40px;
   font-size: 20px;
   line-height: 40px;
   color: #717171;
-  padding: 5px 120px 5px 20px;
 }
-.contacts__icon {
+.contact__choice-arrow {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #D9D9D9 url('../img/arrow.svg') no-repeat center;
+  cursor: pointer;
+}
+.contact__choice-arrow-rotate {
   transform: rotate(180deg);
   transition: 300;
 }
-.contacts__hidden {
+/* Acordion */
+.contacts__accordion {
+  display: none;
+  background: #DCE9D9;
+  height: 250px;
+  padding-bottom: 31px;
+}
+.contacts__input {
+  margin: 27px 35px 0 35px;
+  background: transparent;
+  width: 330px;
+
+  font-size: 16px;
+  line-height: 40px;
+  color: #717171;
+  border: none;
+  border-bottom: 1px solid #717171;
+}
+.contacts__city {
+  display: flex;
+  flex-direction: column;
+  padding: 7px 0 12px 41px;
+  width: 380px;
+  font-size: 16px;
+  line-height: 40px;
+  color: #499A18;
+}
+
+/* ?Modal window contact us for city */
+.contact__choice-content {
   display: none;
 }
+.contact__choice-data {
+}
+.modal__overlay-city-1,
+.modal__overlay-city-2,
+.modal__overlay-city-3,
+.modal__overlay-city-4 {
+  display: none;
+  position: fixed;
+  margin-bottom: 300px;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.modal__form-container {
+  width: 448px;
+  height: 230px;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #EDF2EC;
+  border: 1px solid #000000;
+  border-radius: 20px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.contact__choice-id {
+  padding: 17px 76px 24px 35px;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.contact__choice-btn {
+  text-align: center;
+}
+.contact__choice-button {
+  width: 122px;
+  height: 26px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  color: #717171;
+  padding: 7px 29px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  text-align: center;
+}
+.contact__choice-text {
+  font-size: 16px;
+  line-height: 40px;
+  color: #717171;
+}
+.contact__change-color {
+  background: #C1E698;
+  border: 1px solid #D6E7D2;
+  border-radius: 0px;
+}
+.contact__change-color-content {
+  background: #DCE9D9;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
 
 /* ------------------------------------- */
 /* !Footer */
@@ -430,8 +549,8 @@ button {
   position: fixed;
   width: 40px;
   height: 40px;
-  bottom: 50px;
-  right: 50px;
+  bottom: 30px;
+  right: 30px;
   background-color: #5dc21e;
   border-radius: 50%;
   color: #FFFFFF;

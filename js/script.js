@@ -1,4 +1,4 @@
-// !Выпадающее меню с текстом
+// !Выпадающее меню с текстом в секции Prices
 $('.accordion > div').on('click', function () {
   $(this).toggleClass('change__color-accordion');
   $(this).children('.prices__choice-arrow').toggleClass('prices__choice-arrow-rotate');
@@ -8,25 +8,38 @@ $('.accordion > div').on('click', function () {
 
 
 
-
-
+// -------------------------------------------------------------------------
 // !Переход по ссылке About us
-$('#hiring-link').on('click', function (e) {
+$('#main-link').on('click', function (e) {
   e.preventDefault();
-  $('html, body').animate({ scrollTop: $('#hiring').offset().top}, 1000)
+  $('html, body').animate({ scrollTop: $('#about-us').offset().top}, 1000)
 })
 // !Переход по ссылке Service
-$('#hiring-link').on('click', function (e) {
+$('#service-link').on('click', function (e) {
   e.preventDefault();
-  $('html, body').animate({ scrollTop: $('#hiring').offset().top}, 1000)
+  $('html, body').animate({ scrollTop: $('#service').offset().top}, 1000)
 })
 // !Переход по ссылке Price
-$('#hiring-link').on('click', function (e) {
+$('#price-link').on('click', function (e) {
   e.preventDefault();
-  $('html, body').animate({ scrollTop: $('#hiring').offset().top}, 1000)
+  $('html, body').animate({ scrollTop: $('#price').offset().top}, 1000)
 })
 // !Переход по ссылке Contacts
-$('#hiring-link').on('click', function (e) {
+$('#contact-link').on('click', function (e) {
   e.preventDefault();
-  $('html, body').animate({ scrollTop: $('#hiring').offset().top}, 1000)
+  $('html, body').animate({ scrollTop: $('#contacts').offset().top}, 1000)
 })
+
+
+
+// -------------------------------------------------------------------------
+// !Выпадающее меню с текстом в секции Contact us
+$('.accordion__contact > div').on('click', function () {
+  $(this).toggleClass('contact__change-color-contentr');
+  $(this).children('.contact__choice-arrow').toggleClass('contact__choice-arrow-rotate');
+  $(this).parent('.accordion__contact').toggleClass('contact__change-color');
+  $(this).next('.contacts__accordion').slideToggle(300);
+})
+
+// --------------------------------------------------------------------------
+

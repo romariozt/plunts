@@ -3,7 +3,12 @@
 }
 /* ------------------------------------- */
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
+  /* Header */
+  .header__content {
+    max-width: 668px;
+  }
+
   /* Main */
   .main__content {
     max-width: 668px;
@@ -54,10 +59,305 @@
   .gardeners__image {
     padding: 0 0 95px 0;
   }
+
+  /* Service */
+  .projects__content {
+    max-width: 668px;
+  }
+  .projects__header {
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+  .projects__gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  /* Prices */
+  .prices__content {
+    max-width: 668px;
+    margin-bottom: 88px;
+  }
+  .prices__title {
+    padding-bottom: 50px;
+  }
+  .prices__right {
+    padding-top: 100px;
+  }
+  .prices__title-right,
+  .main__title-span  {
+    font-size: 25px;
+    padding-bottom: 22px;
+  }
+  .button-project {
+    margin-right: 0;
+  }
+  .prices__image {
+    padding-top: 34px;
+  }
+
+  /* Contac us */
+  .contacts__content {
+    max-width: 668px;
+  }
+  .contacts__image {
+    text-align: center;
+  }
+  .contacts__image-woman {
+    width: 200px;
+    padding-top: 250px;
+  }
+  .contacts__box {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .contact__choice {
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  .footer__content {
+    max-width: 668px;
+    flex-direction: column;
+    align-items: center;
+    padding: 33px 0 18px 0;
+  }
 }
 /* ------------------------------------- */
 
 @media screen and (max-width: 380px) {
+   /* Header */
+   .header {
+    padding: 36px 0;
+   }
+   .header__menu {
+    display: none;
+   }
+   .header__content {
+    max-width: 330px;
+  }
+  /* Burger-Menu */
+  label .menu {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background: #FFF;
+    border-radius: 50% 50% 50% 50%;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    cursor: pointer;
+  }
+  label .hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 2px;
+    background: #499A18;
+    display: block;
+    transform-origin: center;
+    transition: .5s ease-in-out;
+  }
+  label .hamburger:after, label .hamburger:before {
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #499A18;
+  }
+  label .hamburger:before { top: -10px; }
+  label .hamburger:after { bottom: -10px; }
+  label input { display: none; }
+  label input:checked + .menu {
+    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+    border-radius: 0;
+  }
+  label input:checked + .menu .hamburger {
+    transform: rotate(45deg);
+  }
+  label input:checked + .menu .hamburger:after {
+    transform: rotate(90deg);
+    bottom: 0;
+    
+  }
+  label input:checked + .menu .hamburger:before {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  label input:checked + .menu + ul { opacity: 1; }
+  label ul {
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .25s 0s ease-in-out;
+  }
+  label a {
+    margin-bottom: 1em;
+    display: block;
+    color: #499A18;
+    text-decoration: none;
+  }
+  /* Main */
+  .main__content {
+    max-width: 330px;
+    padding-top: 0;
+  }
+  .main__right {
+    width: 346px;
+  }
+  .main__image img {
+    display: none;;
+  }
+  .main__title {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  .main__text {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .button {
+    font-size: 10px;
+    margin-bottom: 24px;
+    padding: 8px 18px;
+  }
 
-}
+ /* Gardeners */
+  .gardeners__content {
+    max-width: 330px;
+    flex-direction: column;
+  }
+  .gardeners__title {
+    font-size: 25px;
+    padding-bottom: 0px;
+  }
+  .gardeners__text {
+    padding: 0;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .gardeners__content {
+    gap: 0;
+  }
+  .gardeners__item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .gardeners__image-vazon {
+    width: 150px;
+    padding-bottom: 30px;
+  }
+  .gardeners__image {
+    padding: 0;
+  }
+
+  /* Service */
+  .projects__content {
+    max-width 330px;
+  }
+  .projects__title {
+    font-size: 25px;
+    padding-bottom: 35px;
+  }
+  .projects__header {
+    gap: 0;
+  }
+  .projects__gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 34px;
+    padding-bottom: 27px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .button-project {
+    gap: 9px;
+  }
+
+  /* Prices */
+  .prices__content {
+    max-width: 330px;
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+  .prices__choice {
+  }
+  .prices__title {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+  .prices__choice-accordion {
+    width: 180px;
+    font-size: 15px;
+    padding: 16px 30px;
+  }
+  .prices__item {
+    text-align: center;
+  }
+  .prices__right {
+    padding-top: 20px;
+  }
+  .prices__title-right,
+  .main__title-span  {
+    font-size: 20px;
+    padding-bottom: 14px;
+    max-width: 230px;
+    margin: 0 auto;
+  }
+  .prices__image {
+    display: none;
+  }
+
+  /* Contac us */
+  .contacts {
+    padding-top: 25px;
+  }
+  .contacts__content {
+    max-width: 330px;
+  }
+  .contacts__image {
+    text-align: center;
+  }
+  .contacts__name {
+    font-size: 25px;
+  }
+  .contacts__image-woman {
+    width: 100px;
+    padding-top: 132px;
+  }
+  .contacts__box {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .contact__choice {
+    padding-top: 80px;
+    margin: 0 auto;
+  }
+  .contact__choice-accordion {
+    padding: 5px 119px 5px 20px;
+  }
+  .accordion__contact {
+    width: 300px;
+    height: 50px;
+  }
+
+  /* Footer */
+  .footer__content {
+    padding: 22px 0 7px 0;
+  }
 /* ----------------------------------- */
