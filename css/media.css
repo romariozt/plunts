@@ -185,7 +185,7 @@
     display: none;
    }
    .header__content {
-    
+    max-width: 350px;
   }
 
   /* todo-Burger-Menu */
@@ -196,6 +196,7 @@
   /* Main */
   .main__content {
     padding-top: 0;
+    max-width: 330px;
   }
   .main__right {
     width: 315px;
@@ -218,9 +219,9 @@
     padding: 8px 18px;
   }
 
- /* Gardeners */
+  /* Gardeners */
   .gardeners__content {
-    flex-direction: column;
+  flex-direction: column;
   }
   .gardeners__title {
     font-size: 25px;
@@ -230,9 +231,8 @@
     padding: 0;
     font-size: 15px;
     text-align: justify;
-        width: 330px;
+    width: 330px;
     padding-top: 20px;
-}
   }
   .gardeners__content {
     gap: 0;
