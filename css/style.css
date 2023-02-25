@@ -68,6 +68,87 @@ button {
   font-weight: 700;
 }
 
+/* todo-Burger menu */
+label {
+  display: none;
+}
+label .menu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  border-radius: 50% 50% 50% 50%;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+}
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background:  #499A18;
+  ;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+label .hamburger:after, label .hamburger:before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background:  #499A18;
+  ;
+}
+label .hamburger:before { top: -10px; }
+label .hamburger:after { bottom: -10px; }
+label input { display: none; }
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #EDF2EC, 0 0 0 100vh #EDF2EC;
+  border-radius: 0;
+}
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+}
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+label input:checked + .menu + ul { opacity: 1; }
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+}
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color:  #499A18;
+  text-decoration: none;
+}
 
 /* ------------------------------------- */
 /* !Main */
@@ -207,6 +288,19 @@ button {
   text-align: center;
 }
 
+/* todo-Filter */
+.projects__buttons {
+}
+.button-project {
+}
+.button_type-gardens {
+  
+}
+.button_type-lawn {
+}
+.button_type-planting {
+}
+
 /* ------------------------------------- */
 /* !Prices */
 /* ------------------------------------- */
@@ -215,6 +309,12 @@ button {
   justify-content: space-between;
   margin-top: 40px;
   margin-bottom: 115px;
+}
+.prices__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 34%;
 }
 .prices__title {
   max-width: 452px;
@@ -347,7 +447,6 @@ button {
   display: flex;
   justify-content: space-between;
 }
-
 .contacts__title {
   text-align: center;
 }
@@ -500,7 +599,6 @@ button {
   cursor: pointer;
 }
 
-
 /* ------------------------------------- */
 /* !Footer */
 /* ------------------------------------- */
@@ -532,8 +630,6 @@ button {
 .footer__item {
   display: inline-block;
   padding: 9px 0;
-}
-.footer__link {
 }
 .footer__img {
 

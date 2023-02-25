@@ -1,422 +1,453 @@
 <!-- mariozt -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;700&family=Roboto&display=swap"
-    rel="stylesheet">
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/media.css">
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/site.webmanifest">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="img/favicon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#603cba">
-  <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-  
-  <title>Plunts</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;700&family=Roboto&display=swap"
+      rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
 
-<body>
-  <div class="wrapper">
-    <!-- !Header -->
-    <section class="header">
-      <div class="header__content container flex">
-        <!-- Logo -->
-        <div class="header__logo">
-          <a href="#" class="">
-            <img src="./img/logo.png" alt="logo">
-          </a>
-        </div>
-        <!-- Menu Header -->
-        <nav class="header__menu">
-          <ul class="header__list flex">
-            <li class="header__item">
-              <a href="#" class="header__link">Home</a>
-            </li>
-            <li class="header__item">
-              <a id="main-link" class="header__link" href="">About us</a>
-            </li>
-            <li class="header__item">
-              <a id="service-link" class="header__link" href="">Service</a>
-            </li>
-            <li class="header__item">
-              <a id="price-link" class="header__link" href="">Price</a>
-            </li>
-            <li class="header__item">
-              <a id="contact-link" class="header__link" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Burger-Menu -->
-        <label>
-          <input type="checkbox">
-          <span class="menu"> <span class="hamburger"></span> </span>
-          <ul>
-            <li> <a href="#">Home</a> </li>
-            <li> <a href="#!">About us</a> </li>
-            <li> <a href="#!">Services</a> </li>
-            <li> <a href="#!">Prices</a> </li>
-            <li> <a href="#!">Contacts</a> </li>
-          </ul>
-        </label>
-      </div>
-    </section>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Plunts</title>
+  </head>
 
-    <!-- !Main -->
-    <main class="main">
-      <div class="main__content container flex">
-        <div class="main__image">
-          <img src="./img/plants/leafs.png" alt="leafs">
-        </div>
-        <div class="main__right">
-          <div class="main__item">
-            <h1 class="main__title">We grow <span class="main__title-span">plants</span> and give you oxygen</h1>
-            <p class="main__text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-              standard
-              dummy text ever since the 1500s.
-            </p>
-            <button class="button" type="submit">LEARN MORE</button>
-          </div>
-        </div>
-      </div>
-    </main>
+  <body>
+    <div class="wrapper">
 
-    <!-- !Gardeners -->
-    <section id="about-us" class="gardeners">
-      <div class="gardeners__content container flex">
-        <div class="gardeners__left">
-          <div class="gardeners__item">
-            <h1 class="gardeners__title"><span class="gardeners__title-span">We are </span>professional experienced <span class="gardeners__title-span">gardeners</span></h1>
-            <p class="gardeners__text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-              unchanged.
-            </p>
+      <!-- !---------------Header------------------------ -->
+      <section class="header">
+        
+        <div class="header__content container flex">
+          
+          <!-- Logo -->
+          <div class="header__logo">
+            <a href="#" class="">
+              <img src="./img/logo.png" alt="logo">
+            </a>
           </div>
-        </div>
-        <div class="gardeners__image">
-          <img class="gardeners__image-vazon" src="./img/plants/houseplant 1.png" alt="leafs">
-        </div>
-      </div>
-    </section>
+          
+          <!-- Menu Header -->
+          <nav class="header__menu">
+            <ul class="header__list flex">
+              <li class="header__item">
+                <a href="#" class="header__link">Home</a>
+              </li>
+              <li class="header__item">
+                <a id="main-link" class="header__link" href="">About us</a>
+              </li>
+              <li class="header__item">
+                <a id="service-link" class="header__link" href="">Service</a>
+              </li>
+              <li class="header__item">
+                <a id="price-link" class="header__link" href="">Price</a>
+              </li>
+              <li class="header__item">
+                <a id="contact-link" class="header__link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
 
-    <!-- !Projects -->
-    <section id="service" class="projects">
-      <div class="projects__content container">
-        <div class="projects__header">
-          <div class="projects__item">
-            <h2 class="projects__title">Service and our projects</h2>
-          </div>
-          <div class="projects__buttons">
-            <button class="button-project" type="submit">Gardens</button>
-            <button class="button-project" type="submit">Lawn</button>
-            <button class="button-project" type="submit">Planting</button>
-          </div>
-        </div>
-        <div class="projects__gallery">
-          <div class="projects__gallery-item">
-            <img src="./img/foto/pic1.jpg" alt="foto">
-            <h3 class="projects__gallery-title">Garden care</h3>
-            <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
-          </div>
-          <div class="projects__gallery-item">
-            <img src="./img/foto/pic2.jpg" alt="foto">
-            <h3 class="projects__gallery-title">Planting</h3>
-            <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
-          </div>
-          <div class="projects__gallery-item">
-            <img src="./img/foto/pic3.jpg" alt="foto">
-            <h3 class="projects__gallery-title">Lawn care</h3>
-            <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
-          </div>
-          <div class="projects__gallery-item">
-            <img src="./img/foto/pic4.jpg" alt="foto">
-            <h3 class="projects__gallery-title">Planting</h3>
-            <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
-          </div>
-          <div class="projects__gallery-item">
-            <img src="./img/foto/pic5.jpg" alt="foto">
-            <h3 class="projects__gallery-title">Garden care</h3>
-            <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
-          </div>
-          <div class="projects__gallery-item">
-            <img src="./img/foto/pic6.jpg" alt="foto">
-            <h3 class="projects__gallery-title">Planting</h3>
-            <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
-          </div>
-        </div>
-      </div>
-    </section>
+          <!-- todo-Burger-Menu -->
+          <label>
+            <input type="checkbox">
+            <span class="menu"> <span class="hamburger"></span> </span>
+            <ul>
+              <li> <a href="#">Home</a> </li>
+              <li> <a href="#!">About us</a> </li>
+              <li> <a href="#!">Services</a> </li>
+              <li> <a href="#!">Prices</a> </li>
+              <li> <a href="#!">Contacts</a> </li>
+            </ul>
+          </label>
 
-    <!-- !Prices -->
-    <section id="price" class="prices">
-      <div class="prices__content container">
-        <div class="prices__left">
-          <div class="prices__title">
-            Prices
+        </div>
+      </section>
+
+      <!-- !Main -->
+      <main class="main">
+
+        <div class="main__content container flex">
+          
+          <div class="main__image">
+            <img src="./img/plants/leafs.png" alt="leafs">
           </div>
-          <!-- Choice -->
-          <div class="prices__choice">
-            <!-- Basic -->
-            <div class="accordion">
-              <div class="prices__choice-accordion">
-                <p class="prices__choice-title">Basics</p>
-                <p class="prices__choice-arrow"></p>
-              </div>
-              <article class="accordion__content">
-                <p class="prices__choice-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                <p class="prices__choice-time"><span class="prices__choice-sum">$15</span> / per hour</p>
-                <button type="submit" class="prices__choice-btn">
-                  <a href="#!">Order</a>
-                </button>
-              </article>
-            </div>
-            <!-- Standart -->
-            <div class="accordion">
-              <div class="prices__choice-accordion">
-                <p class="prices__choice-title">Standart</p>
-                <p class="prices__choice-arrow"></p>
-              </div>
-              <article class="accordion__content">
-                <p class="prices__choice-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                <p class="prices__choice-time"><span class="prices__choice-sum">$25</span> / per hour</p>
-                <button type="submit" class="prices__choice-btn">
-                  <a href="#!">Order</a>
-                </button>
-              </article>
-            </div>
-            <!-- Pro care -->
-            <div class="accordion">
-              <div class="prices__choice-accordion">
-                <p class="prices__choice-title">Pro care</p>
-                <p class="prices__choice-arrow"></p>
-              </div>
-              <article class="accordion__content">
-                <p class="prices__choice-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                <p class="prices__choice-time"><span class="prices__choice-sum">$35</span> / per hour</p>
-                <button type="submit" class="prices__choice-btn">
-                  <a href="#!">Order</a>
-                </button>
-              </article>
+
+          <div class="main__right">
+            <div class="main__item">
+              <h1 class="main__title">We grow <span class="main__title-span">plants</span> and give you oxygen</h1>
+              <p class="main__text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard
+                dummy text ever since the 1500s.
+              </p>
+              <button class="button" type="submit">LEARN MORE</button>
             </div>
           </div>
-        </div>
-        <div class="prices__right">
-          <div class="prices__item">
-            <h1 class="prices__title-right">Our best <span class="main__title-span">gardeners</span> are ready to help you</h1>
-            <button class="button-project" type="submit">Gardens</button>
-          </div>
-          <div class="prices__image">
-            <img src="./img/plants/leafs2.png" alt="leafs">
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- !Contact -->
-    <section id="contacts" class="contacts">
-      <div class="contacts__content container">
-        <!-- Title -->
-        <div class="contacts__title">
-          <h2 class="contacts__name">Contact us</h2>
         </div>
-        <!-- Box -->
-        <div class="contacts__box">
-          <!-- Image woman -->
-          <div class="contacts__image">
-            <img class="contacts__image-woman" src="./img/contact_woman 1.png" alt="image">
+
+      </main>
+
+      <!-- !Gardeners -->
+      <section id="about-us" class="gardeners">
+
+        <div class="gardeners__content container flex">
+          
+          <div class="gardeners__left">
+            <div class="gardeners__item">
+              <h1 class="gardeners__title"><span class="gardeners__title-span">We are </span>professional experienced <span class="gardeners__title-span">gardeners</span></h1>
+              <p class="gardeners__text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                unchanged.
+              </p>
+            </div>
           </div>
-          <!-- jQuery -->
-          <!-- Contact us menu city -->
-          <div class="contact__choice">
-            <!-- City -->
-            <div class="accordion__contact">
-              <div class="contact__choice-accordion">
-                <p class="contact__choice-title">City</p>
-                <p class="contact__choice-arrow"></p>
+          
+          <div class="gardeners__image">
+            <img class="gardeners__image-vazon" src="./img/plants/houseplant 1.png" alt="leafs">
+          </div>
+        </div>
+
+      </section>
+
+      <!-- !Projects -->
+      <section id="service" class="projects">
+
+        <div class="projects__content container">
+          
+          <div class="projects__header">
+            <div class="projects__item">
+              <h2 class="projects__title">Service and our projects</h2>
+            </div>
+            <div class="projects__buttons">
+              <button class="button-project button_type-gardens" data-filter="gardens">Gardens</button>
+              <button class="button-project button_type-lawn" data-filter="lawn">Lawn</button>
+              <button class="button-project button_type-planting" data-filter="planting">Planting</button>
+            </div>
+          </div>
+
+          <div class="projects__gallery container__filter">
+            <div class="projects__gallery-item garden__care">
+              <img src="./img/foto/pic1.jpg" alt="foto">
+              <h3 class="projects__gallery-title">Garden care</h3>
+              <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
+            </div>
+            <div class="projects__gallery-item planting">
+              <img src="./img/foto/pic2.jpg" alt="foto">
+              <h3 class="projects__gallery-title">Planting</h3>
+              <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
+            </div>
+            <div class="projects__gallery-item lawn">
+              <img src="./img/foto/pic3.jpg" alt="foto">
+              <h3 class="projects__gallery-title">Lawn care</h3>
+              <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
+            </div>
+            <div class="projects__gallery-item planting">
+              <img src="./img/foto/pic4.jpg" alt="foto">
+              <h3 class="projects__gallery-title">Planting</h3>
+              <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
+            </div>
+            <div class="projects__gallery-item garden__care">
+              <img src="./img/foto/pic5.jpg" alt="foto">
+              <h3 class="projects__gallery-title">Garden care</h3>
+              <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
+            </div>
+            <div class="projects__gallery-item planting">
+              <img src="./img/foto/pic6.jpg" alt="foto">
+              <h3 class="projects__gallery-title">Planting</h3>
+              <p class="projects__gallery-text">Lorem Ipsum has been the industry</p>
+            </div>
+          </div>
+          
+        </div>
+
+      </section>
+
+      <!-- !Prices -->
+      <section id="price" class="prices">
+
+        <div class="prices__content container">
+
+          <div class="prices__box">
+
+            <div class="prices__left">
+            <div class="prices__title">
+              Prices
+            </div>
+
+            <!-- Choice -->
+            <div class="prices__choice">
+              <!-- Basic -->
+              <div class="accordion">
+                <div class="prices__choice-accordion">
+                  <p class="prices__choice-title">Basics</p>
+                  <p class="prices__choice-arrow"></p>
+                </div>
+                <article class="accordion__content">
+                  <p class="prices__choice-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                  <p class="prices__choice-time"><span class="prices__choice-sum">$15</span> / per hour</p>
+                  <button type="submit" class="prices__choice-btn">
+                    <a href="#!">Order</a>
+                  </button>
+                </article>
               </div>
-              <article class="contacts__accordion">
-                <form action="">
-                  <input class="contacts__input" required placeholder="Canandaigua, NY"></input>
-                </form>
-                <a id="open__modal-1" href="#!" class="contacts__city">New York City</a>
-                <a id="open__modal-2" href="#!" class="contacts__city">Yonkers, NY</a>
-                <a id="open__modal-3" href="#!" class="contacts__city">Sherrill, NY</a>
-              </article>
+              <!-- Standart -->
+              <div class="accordion">
+                <div class="prices__choice-accordion">
+                  <p class="prices__choice-title">Standart</p>
+                  <p class="prices__choice-arrow"></p>
+                </div>
+                <article class="accordion__content">
+                  <p class="prices__choice-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                  <p class="prices__choice-time"><span class="prices__choice-sum">$25</span> / per hour</p>
+                  <button type="submit" class="prices__choice-btn">
+                    <a href="#!">Order</a>
+                  </button>
+                </article>
+              </div>
+              <!-- Pro care -->
+              <div class="accordion">
+                <div class="prices__choice-accordion">
+                  <p class="prices__choice-title">Pro care</p>
+                  <p class="prices__choice-arrow"></p>
+                </div>
+                <article class="accordion__content">
+                  <p class="prices__choice-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                  <p class="prices__choice-time"><span class="prices__choice-sum">$35</span> / per hour</p>
+                  <button type="submit" class="prices__choice-btn">
+                    <a href="#!">Order</a>
+                  </button>
+                </article>
+              </div>
+            </div>
+          </div>
+          
+          <div class="prices__right">
+            <div class="prices__item">
+              <h1 class="prices__title-right">Our best <span class="main__title-span">gardeners</span> are ready to help you</h1>
+              <button class="button-project" type="submit">Gardens</button>
+            </div>
+            <div class="prices__image">
+              <img src="./img/plants/leafs2.png" alt="leafs">
+            </div>
+          </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- !Contact -->
+      <section id="contacts" class="contacts">
+        <div class="contacts__content container">
+          <!-- Title -->
+          <div class="contacts__title">
+            <h2 class="contacts__name">Contact us</h2>
+          </div>
+          <!-- Box -->
+          <div class="contacts__box">
+            <!-- Image woman -->
+            <div class="contacts__image">
+              <img class="contacts__image-woman" src="./img/contact_woman 1.png" alt="image">
+            </div>
+            <!-- jQuery -->
+            <!-- Contact us menu city -->
+            <div class="contact__choice">
+              <!-- City -->
+              <div class="accordion__contact">
+                <div class="contact__choice-accordion">
+                  <p class="contact__choice-title">City</p>
+                  <p class="contact__choice-arrow"></p>
+                </div>
+                <article class="contacts__accordion">
+                  <form action="">
+                    <input class="contacts__input" required placeholder="Canandaigua, NY"></input>
+                  </form>
+                  <a id="open__modal-1" href="#!" class="contacts__city">New York City</a>
+                  <a id="open__modal-2" href="#!" class="contacts__city">Yonkers, NY</a>
+                  <a id="open__modal-3" href="#!" class="contacts__city">Sherrill, NY</a>
+                </article>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- !Footer -->
-    <footer class="footer">
-      <div class="footer__content container">
-        <!-- Right -->
-        <div class="footer__left">
-          <p>©</p>
-          <p>2022</p>
-          <p><a href="https://github.com" target="_blank" class="footer__githab">github</a></p>
+      <!-- !Footer -->
+      <footer class="footer">
+        <div class="footer__content container">
+          <!-- Right -->
+          <div class="footer__left">
+            <p>©</p>
+            <p>2022</p>
+            <p><a href="https://github.com" target="_blank" class="footer__githab">github</a></p>
+          </div>
+          <!-- School -->
+          <div class="footer__name">
+            <p class="footer__title">Rolling Scopes School</p>
+          </div>
+          <!-- Social -->
+          <div class="footer__social">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="https://instagram.com" target="_blank" class="footer__link">
+                  <img src="./img/social/inst.svg" alt="instagram">
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="https://facebook.com" target="_blank" class="footer__link">
+                  <img src="./img/social/fb.svg" class="footer__img" alt="facebook">
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="https://twitter.com" target="_blank" class="footer__link">
+                  <img src="./img/social/tw.svg" alt="twitter">
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="https://pinterest.com" target="_blank" class="footer__link">
+                  <img src="./img/social/pin.svg" alt="pinterest">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- School -->
-        <div class="footer__name">
-          <p class="footer__title">Rolling Scopes School</p>
-        </div>
-        <!-- Social -->
-        <div class="footer__social">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="https://instagram.com" target="_blank" class="footer__link">
-                <img src="./img/social/inst.svg" alt="instagram">
-              </a>
-            </li>
-            <li class="footer__item">
-              <a href="https://facebook.com" target="_blank" class="footer__link">
-                <img src="./img/social/fb.svg" class="footer__img" alt="facebook">
-              </a>
-            </li>
-            <li class="footer__item">
-              <a href="https://twitter.com" target="_blank" class="footer__link">
-                <img src="./img/social/tw.svg" alt="twitter">
-              </a>
-            </li>
-            <li class="footer__item">
-              <a href="https://pinterest.com" target="_blank" class="footer__link">
-                <img src="./img/social/pin.svg" alt="pinterest">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </div>
+      </footer>
+    </div>
 
-  <!-- ?Кнопка Вверх
-  <div id="up" class="btn__up">
-    <span>&#10148;</span>
-  </div> -->
+    <!-- ?Кнопка Вверх
+    <div id="up" class="btn__up">
+      <span>&#10148;</span>
+    </div> -->
 
 
-  <!-- ?Modal window city -->
-  <div class="modal__overlay-city-1">
-    <div class="modal__form-container">
-      <div class="contact__choice-id">
-        <div class="contact__choice-text">
-          <p>City:</p>
-          <p>Phone:</p>
-          <p>Office adress:</p>
+    <!-- ?Modal window city -->
+    <div class="modal__overlay-city-1">
+      <div class="modal__form-container">
+        <div class="contact__choice-id">
+          <div class="contact__choice-text">
+            <p>City:</p>
+            <p>Phone:</p>
+            <p>Office adress:</p>
+          </div>
+          <div class="contact__choice-text">
+            <p>Canandaigua, NY</p>
+            <p>+1 585 393 0001</p>
+            <p>151 Charlotte Street</p>
+          </div>
         </div>
-        <div class="contact__choice-text">
-          <p>Canandaigua, NY</p>
-          <p>+1 585 393 0001</p>
-          <p>151 Charlotte Street</p>
+        <div class="contact__choice-btn">
+          <button type="submit" class="contact__choice-button">Call us</button>
         </div>
-      </div>
-      <div class="contact__choice-btn">
-        <button type="submit" class="contact__choice-button">Call us</button>
-      </div>
-      <div class="close">
-        <p>x</p>
+        <div class="close">
+          <p>x</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="modal__overlay-city-2">
-    <div class="modal__form-container">
-      <div class="contact__choice-id">
-        <div class="contact__choice-text">
-          <p>City:</p>
-          <p>Phone:</p>
-          <p>Office adress:</p>
+    <div class="modal__overlay-city-2">
+      <div class="modal__form-container">
+        <div class="contact__choice-id">
+          <div class="contact__choice-text">
+            <p>City:</p>
+            <p>Phone:</p>
+            <p>Office adress:</p>
+          </div>
+          <div class="contact__choice-text">
+            <p>New York City</p>
+            <p>+1	212	456 0002</p>
+            <p>9 East 91st Street</p>
+          </div>
         </div>
-        <div class="contact__choice-text">
-          <p>New York City</p>
-          <p>+1	212	456 0002</p>
-          <p>9 East 91st Street</p>
+        <div class="contact__choice-btn">
+          <button type="submit" class="contact__choice-button">Call us</button>
         </div>
-      </div>
-      <div class="contact__choice-btn">
-        <button type="submit" class="contact__choice-button">Call us</button>
-      </div>
-      <div class="close">
-        <p>x</p>
+        <div class="close">
+          <p>x</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="modal__overlay-city-3">
-    <div class="modal__form-container">
-      <div class="contact__choice-id">
-        <div class="contact__choice-text">
-          <p>City:</p>
-          <p>Phone:</p>
-          <p>Office adress:</p>
+    <div class="modal__overlay-city-3">
+      <div class="modal__form-container">
+        <div class="contact__choice-id">
+          <div class="contact__choice-text">
+            <p>City:</p>
+            <p>Phone:</p>
+            <p>Office adress:</p>
+          </div>
+          <div class="contact__choice-text">
+            <p>Yonkers, NYY</p>
+            <p>+1	914	678 0003</p>
+            <p>511 Warburton Ave</p>
+          </div>
         </div>
-        <div class="contact__choice-text">
-          <p>Yonkers, NYY</p>
-          <p>+1	914	678 0003</p>
-          <p>511 Warburton Ave</p>
+        <div class="contact__choice-btn">
+          <button type="submit" class="contact__choice-button">Call us</button>
         </div>
-      </div>
-      <div class="contact__choice-btn">
-        <button type="submit" class="contact__choice-button">Call us</button>
-      </div>
-      <div class="close">
-        <p>x</p>
+        <div class="close">
+          <p>x</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="modal__overlay-city-4">
-    <div class="modal__form-container">
-      <div class="contact__choice-id">
-        <div class="contact__choice-text">
-          <p>City:</p>
-          <p>Phone:</p>
-          <p>Office adress:</p>
+    <div class="modal__overlay-city-4">
+      <div class="modal__form-container">
+        <div class="contact__choice-id">
+          <div class="contact__choice-text">
+            <p>City:</p>
+            <p>Phone:</p>
+            <p>Office adress:</p>
+          </div>
+          <div class="contact__choice-text">
+            <p>Sherrill, NY</p>
+            <p>+1	315	908 0004</p>
+            <p>14 WEST Noyes BLVDt</p>
+          </div>
         </div>
-        <div class="contact__choice-text">
-          <p>Sherrill, NY</p>
-          <p>+1	315	908 0004</p>
-          <p>14 WEST Noyes BLVDt</p>
+        <div class="contact__choice-btn">
+          <button type="submit" class="contact__choice-button">Call us</button>
         </div>
-      </div>
-      <div class="contact__choice-btn">
-        <button type="submit" class="contact__choice-button">Call us</button>
-      </div>
-      <div class="close">
-        <p>x</p>
+        <div class="close">
+          <p>x</p>
+        </div>
       </div>
     </div>
-  </div>
- 
   
+    
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
 
-  <script src="./js/upButton.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/modal.js"></script>
+    <script src="./js/upButton.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
 
-</body>
+  </body>
 </html>
