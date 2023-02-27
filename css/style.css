@@ -157,7 +157,12 @@ label a {
   background: #EDF2EC;
 }
 .main__content {
-  gap: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__right {
+  width: 550px;
 }
 .main__title {
   font-weight: 700;
@@ -368,6 +373,9 @@ label a {
 .accordion__content {
   display: none;
   padding: 0 40px 0 40px;
+}
+.prices__box {
+  gap: 50%;
 }
 .prices__choice-text {
   width: 164px;

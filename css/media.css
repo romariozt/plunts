@@ -197,9 +197,9 @@
   .main__content {
     padding-top: 0;
     max-width: 330px;
+    gap: 0;
   }
   .main__right {
-    width: 315px;
 
   }
   .main__image img {
